@@ -16,7 +16,7 @@ int main()
 
     make_heap(v.begin(), v.end(), greater<int>());//max
    
-
+    cout<< "test"<<endl;
    
    // cout << "test\n" << v.front() << "\n";
     // 형태를 처리 해야 된다.
