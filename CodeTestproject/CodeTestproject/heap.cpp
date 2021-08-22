@@ -12,9 +12,6 @@ void heapTest()
     int result = 0;
 
     make_heap(v.begin(), v.end(), greater<int>());//max
-
-
-
     // cout << "test\n" << v.front() << "\n";
      // 형태를 처리 해야 된다.
     while (v.front() < K)

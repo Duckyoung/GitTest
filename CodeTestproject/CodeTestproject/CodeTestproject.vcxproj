@@ -147,8 +147,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Cnodetree.cpp" />
     <ClCompile Include="CodeTestproject.cpp" />
     <ClCompile Include="heap.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cnodetree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
