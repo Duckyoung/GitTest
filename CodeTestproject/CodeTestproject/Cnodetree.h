@@ -68,6 +68,12 @@ struct org_tree
 		tree.addSubordinate("부사장", "재무부장");
 
 		cout << "nodetree 테스트" << endl;
+		preorder(tree.root);
+		inorder(tree.root);
+		posorder(tree.root);
+		levelOrder(tree.root);
+
+
 	}
 	static void preorder(node* start)
 	{
@@ -97,6 +103,29 @@ struct org_tree
 		preorder(start->second);
 		cout << start->posision << ",";
 		
+	}
+	static void levelOrder(node* start)
+	{
+		if (!start)
+			return;
+		queue<node*> q;
+		q.push(start);
+
+		while (!q.empty())
+		{
+			int size = q.size();
+			for (int i = 0; i < size; i++)
+			{
+				auto current = q.front();
+				q.pop();
+				cout << current->posision << endl;
+				if (current->first)
+					q.push(current->first);
+				if (current->second)
+					q.push(current->second);
+			}
+			cout << endl;
+		}
 	}
 };
 //정적 함수로 생성자를 호출 시킨다.

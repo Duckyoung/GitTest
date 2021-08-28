@@ -147,11 +147,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BSTtree.cpp" />
     <ClCompile Include="Cnodetree.cpp" />
     <ClCompile Include="CodeTestproject.cpp" />
     <ClCompile Include="heap.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BSTtree.h" />
     <ClInclude Include="Cnodetree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
