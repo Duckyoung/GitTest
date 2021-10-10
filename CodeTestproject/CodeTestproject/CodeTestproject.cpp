@@ -5,12 +5,16 @@
 #include <algorithm>
 #include <vector>
 #include "Cnodetree.h"
+#include "Priority_queue.h"
 
 using namespace std;
 
 int main()
 {
-	org_tree::maintest();
+	median min;
+	min.Main();
+
+
 	int a = 0;
 }
 

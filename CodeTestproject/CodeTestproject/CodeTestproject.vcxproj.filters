@@ -27,12 +27,18 @@
     <ClCompile Include="BSTtree.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Priority_queue.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cnodetree.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="BSTtree.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Priority_queue.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

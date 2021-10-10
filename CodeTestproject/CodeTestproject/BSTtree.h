@@ -85,6 +85,53 @@ private:
 	{
 		if (!start)
 			return;
+		inorder_impl(start->left);
+		cout << start->data << endl;
+		inorder_impl(start->right);
+	}
+public:
+	bstnode* succesor(bstnode* start)
+	{
+		auto current = start->right;
+		while (current && current->left)//why?
+		{
+			current = current->left;
+		}
+		return current;
+	}
+	void deleteValue(int value)
+	{
+		root = delete_impl(root, value);
+	}
+private:
+	bstnode* delete_impl(bstnode* start, int value)
+	{
+		if (!start)
+			return NULL;
+		if (value < start->data)
+			start->left = delete_impl(start->left, value);
+		else if (value > start->data)
+			start->right = delete_impl(start->right, value);
+		else
+		{
+			if (!start->left)
+			{
+				auto tmp = start->right;
+				delete start;
+				return tmp;
+			}
+			if(!start->right)
+			{
+				auto tmp = start->left;
+				delete start;
+				return tmp;
+			}
+			auto succNode = succesor(start);
+			start->data = succNode->data;
+
+			start->right = delete_impl(start->right, succNode->data);
+		}
+		return start;
 
 	}
 };
