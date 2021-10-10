@@ -147,6 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Adjacencymatrix.cpp" />
     <ClCompile Include="BSTtree.cpp" />
     <ClCompile Include="Cnodetree.cpp" />
     <ClCompile Include="CodeTestproject.cpp" />
@@ -154,6 +155,7 @@
     <ClCompile Include="Priority_queue.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Adjacencymatrix.h" />
     <ClInclude Include="BSTtree.h" />
     <ClInclude Include="Cnodetree.h" />
     <ClInclude Include="Priority_queue.h" />
