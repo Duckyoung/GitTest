@@ -151,6 +151,7 @@
     <ClCompile Include="BSTtree.cpp" />
     <ClCompile Include="Cnodetree.cpp" />
     <ClCompile Include="CodeTestproject.cpp" />
+    <ClCompile Include="Hash_map.cpp" />
     <ClCompile Include="heap.cpp" />
     <ClCompile Include="Priority_queue.cpp" />
   </ItemGroup>
@@ -158,6 +159,7 @@
     <ClInclude Include="Adjacencymatrix.h" />
     <ClInclude Include="BSTtree.h" />
     <ClInclude Include="Cnodetree.h" />
+    <ClInclude Include="Hash_map.h" />
     <ClInclude Include="Priority_queue.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

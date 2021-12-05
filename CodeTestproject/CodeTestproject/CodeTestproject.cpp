@@ -6,13 +6,14 @@
 #include <vector>
 #include "Cnodetree.h"
 #include "Priority_queue.h"
+#include "Hash_map.h"
 
 using namespace std;
 
 int main()
 {
-	median min;
-	min.Main();
+	Hash_map* map= new Hash_map(7);
+	map->main();
 
 
 	int a = 0;
