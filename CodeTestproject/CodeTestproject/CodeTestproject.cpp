@@ -7,14 +7,20 @@
 #include "Cnodetree.h"
 #include "Priority_queue.h"
 #include "Hash_map.h"
+#include "CuckooHash_map.h"
+#include "STLhashtable.h"
+#include "Bloomfilter.h"
+#include "Binary_search.h"
+#include "Merge.h"
+#include "Quicksort.h"
+#include "Lineartimeselection.h"
 
 using namespace std;
 
 int main()
 {
-	Hash_map* map= new Hash_map(7);
-	map->main();
-
+	Lineartimeselection sort;
+	sort.run_linear_select_test();
 
 	int a = 0;
 }
